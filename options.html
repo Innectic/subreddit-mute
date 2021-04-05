@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>SubredditMute Options</title>
 
     <style>
         body {
+            min-width: 300px;
+            min-height: 100px;
             margin: 0;
             padding: 0;
             background-color: #353b48;
         }
 
         .things {
-            margin-left: auto;
-            margin-right: auto;
+            margin-top: 50px;
+            display: grid;
+            place-items: center;
+        }
+
+        .muteBox {
+            width: 40%;
+            margin-bottom: 15px;
         }
 
         .status {
+            margin-top: 10px;
             color: green;
             font-size: 20px;
+            font-weight: 700;
         }
     </style>
 
 </head>
 <body>
     <div class="things">
-        <div class="status" id="status"></div>
-        <input id="mutedSubreddits"></input>
+        <textarea id="mutedSubreddits" class="muteBox"></textarea>
         <button id="save_button">Save Options</button>
+        <div class="status" id="status"></div>
+
         <script src="options.js"></script>
     </div>
 </body>

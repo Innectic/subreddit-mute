@@ -13,5 +13,10 @@
 
     "permissions": [
         "storage"
-    ]
+    ],
+
+    "action": {
+        "default_title": "SubredditMute",
+        "default_popup": "options.html"
+    }
 }

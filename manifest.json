@@ -1,0 +1,17 @@
+{
+    "name": "SubredditMute",
+    "description": "Stop seeing subreddits you don't want to see",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "content_scripts": [{
+        "js": [ "subfinder.js" ],
+        "matches": ["https://*.reddit.com/*"]
+    }],
+
+    "options_page": "options.html",
+
+    "permissions": [
+        "storage"
+    ]
+}
